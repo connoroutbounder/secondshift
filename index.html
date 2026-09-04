@@ -169,6 +169,8 @@
 
     /* final */
     .final { position: relative; overflow: hidden; }
+    .final h2 em { font-style: normal; color: var(--orange2); }
+    @supports (animation-timeline: view()) { .final h2 em { background: linear-gradient(var(--orange2), var(--orange2)) no-repeat left 100% / 0% 3px; animation: sweep linear both; animation-timeline: view(); animation-range: entry 30% entry 90%; } }
     .final .arrows { position: absolute; right: -40px; top: 0; bottom: 0; width: 55%; opacity: .08; pointer-events: none; overflow: hidden; }
     .final .arrtrack { display: flex; flex-direction: column; animation: drift 26s linear infinite; }
     .final .arrgrid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0; }
@@ -237,10 +239,10 @@
         <div class="hcopy">
           <span class="eyebrow mono r r1"><i></i>AI operations, embedded in your company</span>
           <h1 class="r r2"><span class="ln">Add a second shift.</span><span class="ln dim">Not a second payroll.</span></h1>
-          <p class="lede r r3">We put a small AI operations team inside your business. Department by department, we find the work that shouldn't be done by hand and build the systems that do it.</p>
+          <p class="lede r r3">Most companies have handed their teams AI tools. Very few have redesigned the work around them. We embed a small team of engineers and operators inside your business, go department by department, and build the systems that take the manual work off your people's plates.</p>
           <div class="cta-row r r4">
-            <a class="btn big" href="https://calendly.com/connor-outbounder/30min">Book a 30-minute call<svg class="arr" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3 8 H13 M9 4 L13 8 L9 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-            <span class="cta-note">No deck. We'll ask about your business and tell you where the lift is.</span>
+            <a class="btn big" href="https://calendly.com/connor-outbounder/30min">Book a 30-minute working session<svg class="arr" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3 8 H13 M9 4 L13 8 L9 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+            <span class="cta-note">No deck. We'll ask how your business runs and tell you where the first ninety days of lift is.</span>
           </div>
         </div>
         <div class="hmark r r5">
@@ -263,7 +265,7 @@
     <div class="wrap" style="display: flex; flex-direction: column; gap: 56px;">
       <div class="sechead sr">
         <div class="num"><b>01</b><span class="mono">Why now</span></div>
-        <div class="ttl thesis">Every industrial revolution ran on a second shift. <em>This one does too.</em> The difference is that this time, the shift doesn't need a parking lot.</div>
+        <div class="ttl"><h2>AI is everywhere.<br>The leverage isn't.</h2></div>
       </div>
       <div class="sechead sr">
         <div class="num"></div>
@@ -280,8 +282,8 @@
       <div class="sechead sr">
         <div class="num"></div>
         <div class="ttl grid2">
-          <p>Most companies between fifty and five hundred people run on email, spreadsheets, and a handful of software tools that don't talk to each other. The gaps between those tools are filled by people doing the same work every day: re-keying orders, chasing approvals, drafting the same reply for the hundredth time.</p>
-          <p>That work is now automatable, and cheaply. But nobody inside the company has the time to find it, scope it, and build it. That's the job we do. We're not selling software and we're not writing a strategy. We show up, find the work, and take it off your people's plates.</p>
+          <p>Most teams use AI to draft an email or answer a question. Useful, but a long way from changing how the business runs. The real gains show up when AI is built into the workflow itself: reading the inputs, applying your rules, moving information between systems, finishing the routine work, and handing a person only the exceptions.</p>
+          <p>Those opportunities are specific to your company and rarely fit inside another piece of software. The people closest to the work don't have the time or the tools to rebuild it, and if you have engineers, they have a roadmap. So the manual work stays, and the lift everyone was promised never shows up. That's the gap we close.</p>
         </div>
       </div>
     </div>
@@ -292,26 +294,26 @@
     <div class="wrap" style="display: flex; flex-direction: column; gap: 72px;">
       <div class="sechead sr">
         <div class="num"><b>02</b><span class="mono">How it works</span></div>
-        <div class="ttl"><h2>Department by department. Something shipped in the first thirty days.</h2></div>
+        <div class="ttl"><h2>First system live in thirty days. Real operating change in ninety.</h2></div>
       </div>
       <div class="grid3 sr d1">
         <div class="step">
-          <div class="n"><span>DIAGNOSTIC</span><span>4 WEEKS</span></div>
+          <div class="n"><span>FIND THE WORK</span><span>WEEKS 1–2</span></div>
           <span class="bignum">01</span>
-          <h3>We map the work.</h3>
-          <p>We sit with each department and inventory the recurring work: what it is, how often, how long, and how structured the inputs are. You get a ranked list of what to automate first, with the hours and dollars attached.</p>
+          <h3>We find the work.</h3>
+          <p>We sit with each department and map the recurring work, the broken handoffs, and the gaps between your tools. Every opportunity gets ranked by time saved, dollar impact, complexity, and risk.</p>
         </div>
         <div class="step s2">
-          <div class="n"><span>BUILD</span><span>ONGOING</span></div>
+          <div class="n"><span>PROVE THE LIFT</span><span>WEEKS 3–12</span></div>
           <span class="bignum">02</span>
-          <h3>We ship it.</h3>
-          <p>Starting at the top of the list, we build and roll out one workflow every two to four weeks, inside the tools your team already uses. Your people are trained on each one before we move to the next.</p>
+          <h3>We prove the lift.</h3>
+          <p>We build the highest-return systems inside the tools your team already uses. The first workflow goes live inside thirty days, then a steady sequence of releases through the first ninety.</p>
         </div>
         <div class="step s3">
-          <div class="n"><span>RUN</span><span>MONTH TO MONTH</span></div>
+          <div class="n"><span>COMPOUND IT</span><span>MONTH TO MONTH</span></div>
           <span class="bignum">03</span>
-          <h3>We stay on the floor.</h3>
-          <p>We keep what we built running, fix what breaks, and keep working down the list as your business changes. You can stop any month. Most people don't, because the list keeps growing.</p>
+          <h3>We compound it.</h3>
+          <p>We keep the systems running, improve them as the business changes, and work down the list. Your team is trained along the way, and you own everything we build: the code, the documentation, and the know-how.</p>
         </div>
       </div>
       <div style="display: flex; flex-direction: column; gap: 26px;">
@@ -319,57 +321,81 @@
         <div class="marq">
           <div class="track">
             <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Invoice intake <b>FINANCE</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>AP / AR follow-up <b>FINANCE</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Order &amp; job intake <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Vendor chasing <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Quote drafting <b>SALES</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>CRM hygiene <b>SALES</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Ticket triage <b>SUPPORT</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>First-draft replies <b>SUPPORT</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Onboarding checklists <b>HR</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Reconciliation <b>FINANCE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Collections follow-up <b>FINANCE</b></span>
             <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Monthly reporting packs <b>FINANCE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Order entry <b>OPERATIONS</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Vendor follow-up <b>OPERATIONS</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Job tracking <b>OPERATIONS</b></span>
             <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Customer status updates <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Document collection <b>HR</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Account research <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Quote generation <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>CRM administration <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Follow-up sequences <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Ticket triage <b>SUPPORT</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>First-draft responses <b>SUPPORT</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Escalation summaries <b>SUPPORT</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Onboarding checklists <b>PEOPLE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Document collection <b>PEOPLE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Recurring admin <b>PEOPLE</b></span>
             <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Invoice intake <b>FINANCE</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>AP / AR follow-up <b>FINANCE</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Order &amp; job intake <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Vendor chasing <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Quote drafting <b>SALES</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>CRM hygiene <b>SALES</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Ticket triage <b>SUPPORT</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>First-draft replies <b>SUPPORT</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Onboarding checklists <b>HR</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Reconciliation <b>FINANCE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Collections follow-up <b>FINANCE</b></span>
             <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Monthly reporting packs <b>FINANCE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Order entry <b>OPERATIONS</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Vendor follow-up <b>OPERATIONS</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Job tracking <b>OPERATIONS</b></span>
             <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Customer status updates <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Document collection <b>HR</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Account research <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Quote generation <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>CRM administration <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Follow-up sequences <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Ticket triage <b>SUPPORT</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>First-draft responses <b>SUPPORT</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Escalation summaries <b>SUPPORT</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Onboarding checklists <b>PEOPLE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Document collection <b>PEOPLE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Recurring admin <b>PEOPLE</b></span>
           </div>
         </div>
         <div class="marq" style="margin-top: 12px;">
           <div class="track rev">
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Invoice intake <b>FINANCE</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>AP / AR follow-up <b>FINANCE</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Order &amp; job intake <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Vendor chasing <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Quote drafting <b>SALES</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>CRM hygiene <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Recurring admin <b>PEOPLE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Document collection <b>PEOPLE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Onboarding checklists <b>PEOPLE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Escalation summaries <b>SUPPORT</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>First-draft responses <b>SUPPORT</b></span>
             <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Ticket triage <b>SUPPORT</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>First-draft replies <b>SUPPORT</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Onboarding checklists <b>HR</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Monthly reporting packs <b>FINANCE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Follow-up sequences <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>CRM administration <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Quote generation <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Account research <b>SALES</b></span>
             <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Customer status updates <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Document collection <b>HR</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Job tracking <b>OPERATIONS</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Vendor follow-up <b>OPERATIONS</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Order entry <b>OPERATIONS</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Monthly reporting packs <b>FINANCE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Collections follow-up <b>FINANCE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Reconciliation <b>FINANCE</b></span>
             <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Invoice intake <b>FINANCE</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>AP / AR follow-up <b>FINANCE</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Order &amp; job intake <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Vendor chasing <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Quote drafting <b>SALES</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>CRM hygiene <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Recurring admin <b>PEOPLE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Document collection <b>PEOPLE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Onboarding checklists <b>PEOPLE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Escalation summaries <b>SUPPORT</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>First-draft responses <b>SUPPORT</b></span>
             <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Ticket triage <b>SUPPORT</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>First-draft replies <b>SUPPORT</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Onboarding checklists <b>HR</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Monthly reporting packs <b>FINANCE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Follow-up sequences <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>CRM administration <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Quote generation <b>SALES</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Account research <b>SALES</b></span>
             <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Customer status updates <b>OPERATIONS</b></span>
-            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Document collection <b>HR</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Job tracking <b>OPERATIONS</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Vendor follow-up <b>OPERATIONS</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Order entry <b>OPERATIONS</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Monthly reporting packs <b>FINANCE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Collections follow-up <b>FINANCE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Reconciliation <b>FINANCE</b></span>
+            <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.5 L21.5 12.5 H16.5 V21.5 H7.5 V12.5 H2.5 Z" fill="#e85d1a"></path></svg>Invoice intake <b>FINANCE</b></span>
           </div>
         </div>
       </div>
@@ -381,24 +407,26 @@
     <div class="wrap" style="display: flex; flex-direction: column; gap: 64px;">
       <div class="sechead sr">
         <div class="num"><b>03</b><span class="mono">Who it's for</span></div>
-        <div class="ttl"><h2>Companies growing faster than they want to hire.</h2></div>
+        <div class="ttl"><h2>Companies with more operational work than engineering bandwidth.</h2></div>
       </div>
       <div class="grid2 sr d1">
         <div style="display: flex; flex-direction: column; gap: 18px;">
           <span class="mono" style="color: var(--orange);">A good fit</span>
           <div class="fit">
-            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5 L7.5 14 L15 4.5" fill="none" stroke="#e85d1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Fifty to five hundred employees, with a CEO or COO who owns headcount decisions.</span></div>
-            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5 L7.5 14 L15 4.5" fill="none" stroke="#e85d1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Operations that live in email, spreadsheets, and several software tools that don't connect.</span></div>
-            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5 L7.5 14 L15 4.5" fill="none" stroke="#e85d1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>A backlog of hires you'd rather not make if the work could be done another way.</span></div>
-            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5 L7.5 14 L15 4.5" fill="none" stroke="#e85d1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Leadership that wants something working this quarter, not a roadmap for next year.</span></div>
+            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5 L7.5 14 L15 4.5" fill="none" stroke="#e85d1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Fifty to five hundred employees, with a CEO or COO accountable for headcount and productivity.</span></div>
+            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5 L7.5 14 L15 4.5" fill="none" stroke="#e85d1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Important workflows spread across email, spreadsheets, and software that doesn't connect.</span></div>
+            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5 L7.5 14 L15 4.5" fill="none" stroke="#e85d1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Teams spending real time moving information, chasing people, and making the same decisions over and over.</span></div>
+            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5 L7.5 14 L15 4.5" fill="none" stroke="#e85d1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Engineers, if you have them, focused on the product rather than the back office.</span></div>
+            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5 L7.5 14 L15 4.5" fill="none" stroke="#e85d1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Leadership that wants measurable results this quarter, not an AI strategy for next year.</span></div>
           </div>
         </div>
         <div style="display: flex; flex-direction: column; gap: 18px;">
           <span class="mono" style="color: var(--mute);">Not a fit</span>
           <div class="fit">
-            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 4.5 L13.5 13.5 M13.5 4.5 L4.5 13.5" fill="none" stroke="#9a9b95" stroke-width="2" stroke-linecap="round"></path></svg><span>You want a chatbot on your website. That's a product, and there are plenty.</span></div>
-            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 4.5 L13.5 13.5 M13.5 4.5 L4.5 13.5" fill="none" stroke="#9a9b95" stroke-width="2" stroke-linecap="round"></path></svg><span>You want a two-hundred-page AI strategy. We'd rather ship the first workflow than describe it.</span></div>
-            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 4.5 L13.5 13.5 M13.5 4.5 L4.5 13.5" fill="none" stroke="#9a9b95" stroke-width="2" stroke-linecap="round"></path></svg><span>You need someone to bill by the hour. We charge for outcomes, on a flat monthly retainer.</span></div>
+            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 4.5 L13.5 13.5 M13.5 4.5 L4.5 13.5" fill="none" stroke="#9a9b95" stroke-width="2" stroke-linecap="round"></path></svg><span>You want a chatbot, a workshop, or a proof of concept that nobody will own.</span></div>
+            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 4.5 L13.5 13.5 M13.5 4.5 L4.5 13.5" fill="none" stroke="#9a9b95" stroke-width="2" stroke-linecap="round"></path></svg><span>You need extra developers to work through a product backlog.</span></div>
+            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 4.5 L13.5 13.5 M13.5 4.5 L4.5 13.5" fill="none" stroke="#9a9b95" stroke-width="2" stroke-linecap="round"></path></svg><span>You want another off-the-shelf SaaS tool.</span></div>
+            <div class="li"><svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 4.5 L13.5 13.5 M13.5 4.5 L4.5 13.5" fill="none" stroke="#9a9b95" stroke-width="2" stroke-linecap="round"></path></svg><span>You're not prepared to change the underlying workflow once a better one is proven.</span></div>
           </div>
         </div>
       </div>
@@ -415,8 +443,8 @@
           <h2 style="font-size: 40px;">Operators, not consultants.</h2>
         </div>
         <div class="rt">
-          <p>Second Shift is run by two founders who have spent the last decade building and running B2B services companies, the kind where the margin lives or dies on how much work you can take off a person's plate. We use every tool we recommend in our own business first.</p>
-          <p>We're based in western Massachusetts and work with companies anywhere in the US. The team that runs your diagnostic is the team that builds.</p>
+          <p>Second Shift is run by two founders who have spent the last decade building and running B2B services companies, the kind where margin depends on how intelligently the work gets done. We use every tool we recommend in our own business first.</p>
+          <p>This isn't outsourced development. The team that studies your business is the team that designs, ships, and supports what gets built. We work inside your company, bring your people along, and leave you with systems you own. Based in western Massachusetts, working with companies anywhere in the US.</p>
         </div>
       </div>
     </div>
@@ -428,9 +456,10 @@
     <div class="wrap">
       <div class="finalin sr">
         <span class="mono" style="color: var(--orange2);">Start here</span>
-        <h2>Thirty minutes. We'll tell you where your second shift is.</h2>
-        <p style="max-width: 560px;">Bring whoever owns operations. We'll ask about your departments, your tools, and what your people spend their days on, and tell you honestly whether there's enough lift to be worth it.</p>
-        <a class="btn big" href="https://calendly.com/connor-outbounder/30min" style="background: #f2f1ec; color: #111216; box-shadow: 0 2px 0 #8d8d89, 0 8px 20px -12px rgba(0,0,0,.8);">Book a 30-minute call<svg class="arr" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3 8 H13 M9 4 L13 8 L9 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+        <h2>Every industrial revolution ran on a second shift. <em>This one does too.</em></h2>
+        <p style="max-width: 600px;">Thirty minutes with whoever owns operations. We'll ask about your departments, your tools, and the recurring work, point at the first opportunities worth a look, and tell you candidly whether there's enough lift to be worth it.</p>
+        <a class="btn big" href="https://calendly.com/connor-outbounder/30min" style="background: #f2f1ec; color: #111216; box-shadow: 0 2px 0 #8d8d89, 0 8px 20px -12px rgba(0,0,0,.8);">Book a 30-minute working session<svg class="arr" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M3 8 H13 M9 4 L13 8 L9 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+        <span class="cta-note" style="color: var(--dmute); max-width: 520px;">No AI theater. Just a practical conversation about what your company should no longer be doing by hand.</span>
       </div>
     </div>
   </div>
